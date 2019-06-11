@@ -45,7 +45,8 @@ public class WebDriverManager {
         switch (driverType) {	    
         case FIREFOX : driver = new FirefoxDriver();
 	    	break;
-        case CHROME : 
+        case CHROME :
+        	String x=FileReaderManager.getInstance().getConfigReader().getDriverPath();
         	System.setProperty(CHROME_DRIVER_PROPERTY, FileReaderManager.getInstance().getConfigReader().getDriverPath());
         	driver = new ChromeDriver();
     		break;
