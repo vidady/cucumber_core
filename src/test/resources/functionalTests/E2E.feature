@@ -10,5 +10,7 @@ Scenario: Customer place an order by purchasing an item from search
    And enter personal details on checkout page
    And select same delivery address
    And select payment method as "check" payment
-   And place the prder
+   And place the order
+   
+
  

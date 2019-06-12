@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import cucumber.TestContext;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
 import pageObjects.CheckoutPage;
 
@@ -31,7 +32,7 @@ public class CheckoutPageSteps {
 			 checkoutPage.select_PaymentMethod("CheckPayment");
 		}
 
-		@When("^place the prder$")
+		@And("^place the order$")
 		public void place_the_prder() throws Throwable {
 			 checkoutPage.check_TermsAndCondition(true);
 			 checkoutPage.clickOn_PlaceOrder();

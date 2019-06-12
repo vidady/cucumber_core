@@ -9,14 +9,16 @@ import com.cucumber.listener.Reporter;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
  features = "src/test/resources/functionalTests",
  glue = {"stepDefinitions"},
- plugin={"com.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"}
+ plugin={"com.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"},
+ dryRun=false
  )
-public class TestRunner {
+public class TestRunner extends AbstractTestNGCucumberTests {
 	
 	@AfterClass
 	public static void setup()
