@@ -25,7 +25,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 	{
 	Reporter.loadXMLConfig(new File("D:\\Personal\\cucumber\\cucumber_core\\configs\\extent-config.xml"));
 	//Reporter.setSystemInfo("Test User", System.getProperty("user.name"));
-	Reporter.setSystemInfo("User Name", "AJ");
+	Reporter.setSystemInfo("User Name", "VD");
 	Reporter.setSystemInfo("Application Name", "Test App ");
 	Reporter.setSystemInfo("Operating System Type", System.getProperty("os.name").toString());
 	Reporter.setSystemInfo("Environment", "Production");
